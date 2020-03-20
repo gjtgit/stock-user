@@ -47,7 +47,7 @@ public class UserService {
             String subject = "Activate Code from StockMarketCharting";
             //String context = "<a href=\"/user/checkCode?code="+checkCode+"\">Activate by click:"+checkCode+"</a>";
             String context = "To activate your account, go to StockMarketCharting-signup, input the code "+checkCode;
-            sendSimpleMail(u.getEmail(),subject,context);
+            //sendSimpleMail(u.getEmail(),subject,context);  //send the activate code to the email
         }catch(Exception e) {
             throw new Exception(e);
         }
